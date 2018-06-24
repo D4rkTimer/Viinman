@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/loginBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background1" />
+
+    <ImageView
+        android:id="@+id/loginLogo"
+        android:layout_width="118dp"
+        android:layout_height="113dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/loginBackground"
+        app:srcCompat="@drawable/comlogo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="277dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/textinput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="177dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="41dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/userid" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="277dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textinput"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/userid"
+            app:srcCompat="@drawable/pass" />
+
+        <EditText
+            android:id="@+id/loginPass"
+            android:layout_width="253dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Remember Me"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        tools:layout_editor_absoluteY="314dp" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="8dp"
+        android:padding="0dp"
+        android:text="Forgot Password?"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/checkBox2"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="277dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/loginbutton"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        tools:layout_editor_absoluteY="369dp" />
+
+</android.support.constraint.ConstraintLayout>
